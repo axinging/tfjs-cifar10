@@ -1,0 +1,36 @@
+{
+  "name": "tfjs-cifar10",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:web": "cross-env PLATFORM=web webpack",
+    "build-npm": "./scripts/build-npm.sh",
+    "link-local": "yalc link"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "~6.23.0",
+    "babel-polyfill": "~6.26.0",
+    "babel-preset-env": "~1.6.1",
+    "clang-format": "~1.2.2",
+    "cross-env": "^5.1.6",
+    "parcel-bundler": "~1.10.3",
+    "rollup": "^1.10.1",
+    "rollup-plugin-typescript2": "^0.21.0",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "yalc": "~1.0.0-pre.22"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^1.1.0",
+    "file-loader": "^3.0.1"
+  }
+}
